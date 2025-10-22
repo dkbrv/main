@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>DKBRV - Deutsche Kryptobetrugsrückgewinnungsvereinigung e.V. | Crypto Fraud Recovery</title>
+    <meta name="description" content="Leading crypto forensics and asset recovery in Germany. We trace stolen crypto assets, uncover fraud, and enable recovery. ISO 27001, MiCA compliant, BKA partner.">
+    <meta name="keywords" content="crypto fraud recovery, blockchain forensics, Bitcoin tracing, cryptocurrency investigation, asset recovery Germany, BKA partner">
+    
+    <meta property="og:title" content="DKBRV - Deutsche Kryptobetrugsrückgewinnungsvereinigung e.V.">
+    <meta property="og:description" content="Führende Krypto-Forensik und Vermögensrückgewinnung in Deutschland. Wir verfolgen gestohlene Krypto-Vermögen und decken Betrug auf.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dkbrv.de">
+    <meta property="og:image" content="https://dkbrv.de/og-image.jpg">
+    
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKFSURBVHgB7VdNTttAFH4zdhISQiJVqBJSF1RqF2yQukBdceKegBNwgnICyAmAE0BOQDkB7YYVUje0C6pKRUJCQkL8z3T6xo6JE8eOHVpu+SQLY8/M9703P28GmDFjxv8LHXRAkiQlURTXBUHYFkXxkyAIXrvdbncwGAwSDAaDmCiKW6Iofuj1et/b7fZXTdNKyCE0B6DX6y3pun5RKpW+FIvFTV3Xz1utVonZRLvd/qrr+nmxWNwsFouXlUrl2u/3VyEHSA5A0zRZ1/WLSqVy4/f7KzabaZr2uVqt3pTL5U+gAcgOQJKkbb/fX/X5fHNOGmmaVqlWq9eSJG2D8yD91jRN9vv9q04bf4bP56tUKpUbr9e7AQ5DisrMKzmtVuubz+db8Xq9C2ATQRA2nDY+gSiKm8XieYtUDg+9Xu+Lx+OZg4cAj8czVy6XP4EGIAOYxBwAHABJklYqlcq1y+WaAw0gSdJWtVq9Bg1ABiAIwjZoiG63WwYNQAbg8XgWQUN0Op1F0ABkAG63Wwa7aDQa971eb9Fut+fBJtrt9ny9Xr+v1+tzsAkoLhOGYUyWiQ1omvY5GAz+aDabS47COzo6+hkMBnd0Xf+saRobR44RO0Cn01mTJGkbHMbR0dGvWq32RxAEpV6v/z46OiIMBgOlXq9z7XZbIQxjY2wVTFGSpJXj4+NfLpdrzvk1pNFo/AkGg3eCIJDH47lPJpNL0I4pNyLP8zz5fL4PSZLkXC5HGo1GTqfTJJ/Pk+u6SaPR+AntmArA6/UuHBwc/PR4PHOmaVKv1yOe50m328X/OkmSZJ7nuUQiQRaLhaV2u/01lUo5LoipKTifzweDweAdAFBqKHnI0Ov1rnU6nb/tdts2vx4+Bnqd7iGdZgaDGf8J/gK1duy1RB1CbQAAAABJRU5ErkJggg==">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiREtCUlYiLCJzaG9ydF9uYW1lIjoiREtCUlYiLCJzdGFydF91cmwiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzBhMGEwYSIsInRoZW1lX2NvbG9yIjoiIzAwZDRhYSJ9">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deutsche Kryptobetrugsrückgewinnungsvereinigung e.V.",
+      "alternateName": "DKBRV",
+      "url": "https://dkbrv.de",
+      "logo": "https://dkbrv.de/logo.png",
+      "description": "Leading crypto forensics and asset recovery association in Germany",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mainzer Landstraße 123",
+        "addressLocality": "Frankfurt",
+        "postalCode": "60327",
+        "addressCountry": "DE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+49-69-1234-5678",
+        "contactType": "customer service",
+        "availableLanguage": ["German", "English"]
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --accent: #00d4aa;
+            --accent-hover: #00ffcc;
+            --text-primary: #ffffff;
+            --text-secondary: #e5e5e5;
+            --text-muted: #9ca3af;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: 
+                linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 26, 26, 0.9) 100%),
+                url('https://www.ineteconomics.org/uploads/featured/iStock-1314345497.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 0.5s ease-out 3s forwards;
+        }
+
+        .loading-screen::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 212, 170, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 50%);
+            animation: parallaxMove 20s ease-in-out infinite;
+        }
+
+        .loading-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .loading-logo {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .loading-text {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes parallaxMove {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-20px) translateX(20px); }
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(0, 212, 170, 0.5); }
+            50% { text-shadow: 0 0 40px rgba(0, 212, 170, 0.8); }
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        .navbar {
+            background: rgba(10, 10, 10, 0.95) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--accent) !important;
+            transition: var(--transition);
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            color: var(--text-secondary) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .nav-link:hover {
+            color: var(--accent) !important;
+        }
+
+        .lang-toggle {
+            background: rgba(0, 212, 170, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .lang-toggle:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: 
+                linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 26, 0.8) 100%),
+                url('https://bitcoinminerhosting.com/wp-content/uploads/2019/08/bigstock-Server-Room-D-Illustration-Wi-228657106.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 30% 50%, rgba(0, 212, 170, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(0, 212, 170, 0.1) 0%, transparent 50%);
+            animation: parallaxRotate 30s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes parallaxRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            border: none;
+            color: var(--bg-primary);
+            padding: 1rem 2.5rem;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-outline-primary {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 1rem 2.5rem;
+            font-weight: 700;
+            border-radius: 50px;
+            background: transparent;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.4);
+        }
+
+        .stats-section {
+            background: var(--bg-secondary);
+            padding: 4rem 0;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 212, 170, 0.2);
+            border-color: var(--accent);
+        }
+
+        .glass-card i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .glass-card h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .glass-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .project-card {
+            background: rgba(26, 26, 26, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(0, 212, 170, 0.15);
+        }
+
+        .project-badge {
+            background: rgba(0, 212, 170, 0.2);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .filter-btn {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-secondary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            margin: 0.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-color: var(--accent);
+        }
+
+        .partner-logo {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: var(--transition);
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .partner-logo:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .partner-logo h5 {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .testimonial {
+            background: rgba(26, 26, 26, 0.8);
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial footer {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .table-responsive {
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        table {
+            color: var(--text-secondary);
+        }
+
+        table thead th {
+            color: var(--accent);
+            border-color: rgba(255, 255, 255, 0.1);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        table tbody td {
+            border-color: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+        }
+
+        .contact-form {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+        }
+
+        .form-control,
+        .form-select {
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+            padding: 1rem;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background: rgba(10, 10, 10, 0.9);
+            border-color: var(--accent);
+            color: var(--text-primary);
+            box-shadow: 0 0 0 0.25rem rgba(0, 212, 170, 0.25);
+        }
+
+        .form-label {
+            color: var(--text-secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-right: 1rem;
+            width: 30px;
+        }
+
+        .map-container {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 1rem;
+            margin-top: 2rem;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            padding: 3rem 0 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(26, 26, 26, 0.98);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            z-index: 9998;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                background-attachment: scroll;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 4rem 0;
+            }
+
+            .glass-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .lang {
+            display: none;
+        }
+
+        .lang.active {
+            display: inline;
+        }
+
+        [data-lang="de"] .lang-de {
+            display: inline;
+        }
+
+        [data-lang="en"] .lang-en {
+            display: inline;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 1rem;
+            transition: var(--transition);
+        }
+
+        .team-photo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 212, 170, 0.5);
+        }
+
+        .ceo-section {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .ceo-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+        }
+
+        .ceo-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .ceo-title {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .ceo-bio {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body data-lang="de">
+
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">DKBRV</div>
+            <div class="loading-text">Ihre Krypto-Rettung beginnt hier...</div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">DKBRV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <span class="lang lang-de">Startseite</span>
+                            <span class="lang lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <span class="lang lang-de">Leistungen</span>
+                            <span class="lang lang-en">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <span class="lang lang-de">Über uns</span>
+                            <span class="lang lang-en">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <span class="lang lang-de">Projekte</span>
+                            <span class="lang lang-en">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#success">
+                            <span class="lang lang-de">Erfolge</span>
+                            <span class="lang lang-en">Success</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <span class="lang lang-de">Kontakt</span>
+                            <span class="lang lang-en">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button class="lang-toggle" onclick="toggleLanguage()">
+                            <span id="langFlag">🇩🇪 | 🇬🇧</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 hero-content">
+                    <h1>
+                        <span class="lang lang-de">Ihre Krypto-Untersuchungen.<br>Präzise. Sicher. Erfolgreich.</span>
+                        <span class="lang lang-en">Your Crypto Investigations.<br>Precise. Secure. Successful.</span>
+                    </h1>
+                    <p class="lead">
+                        <span class="lang lang-de">Wir verfolgen gestohlene Vermögen, decken Betrug auf und ermöglichen Rückeroberung. Forensische Blockchain-Expertise für Privatpersonen, Unternehmen und Behörden.</span>
+                        <span class="lang lang-en">We trace stolen assets, uncover fraud and enable recovery. Forensic blockchain expertise for individuals, corporations and authorities.</span>
+                    </p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary me-3">
+                            <span class="lang lang-de">Kostenlose Erstanalyse anfordern</span>
+                            <span class="lang lang-en">Request Free Initial Analysis</span>
+                        </a>
+                        <a href="#success" class="btn btn-outline-primary">
+                            <span class="lang lang-de">Unsere Erfolge entdecken</span>
+                            <span class="lang lang-en">Discover Our Success</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="750">0</span>
+                        <div class="stat-label">
+                            <span class="lang lang-de">Fälle erfolgreich gelöst</span>
+                            <span class="lang lang-en">Cases Solved</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <span class="stat-number">€<span data-count="5.35">0</span>M</span>
+                        <div class="stat-label">
+                            <span class="lang lang-de">Rückerobert</span>
+                            <span class="lang lang-en">Recovered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="25">0</span>
+                        <div class="stat-label">
+                            <span class="lang lang-de">Behördenprojekte</span>
+                            <span class="lang lang-en">Authority Projects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="74">0</span>%
+                        <div class="stat-label">
+                            <span class="lang lang-de">Erfolgsquote</span>
+                            <span class="lang lang-en">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>
+                    <span class="lang lang-de">Unsere Leistungen</span>
+                    <span class="lang lang-en">Our Services</span>
+                </h2>
+                <p class="lead text-secondary">
+                    <span class="lang lang-de">Umfassende Krypto-Forensik und Vermögensrückgewinnung</span>
+                    <span class="lang lang-en">Comprehensive crypto forensics and asset recovery</span>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card">
+                        <i class="fas fa-search-dollar"></i>
+                        <h4>
+                            <span class="lang lang-de">Blockchain-Forensik</span>
+                            <span class="lang lang-en">Blockchain Forensics</span>
+                        </h4>
+                        <p>
+                            <span class="lang lang-de">Transaktionsverfolgung BTC/ETH/USDT/Solana – 98% Trefferquote</span>
+                            <span class="lang lang-en">Transaction tracing BTC/ETH/USDT/Solana – 98% accuracy rate</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Asset Recovery</h4>
+                        <p>
+                            <span class="lang lang-de">Kooperation mit Exchanges/Behörden zur Vermögensrückholung</span>
+                            <span class="lang lang-en">Cooperation with exchanges/authorities for asset recovery</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>
+                            <span class="lang lang-de">Gutachten</span>
+                            <span class="lang lang-en">Expert Reports</span>
+                        </h4>
+                        <p>
+                            <span class="lang lang-de">Gerichtsverwertbare Analysen für Straf-/Zivilverfahren</span>
+                            <span class="lang lang-en">Court-admissible analyses for criminal/civil proceedings</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4>Compliance</h4>
+                        <p>
+                            <span class="lang lang-de">BaFin/MiCA-konforme Risikoanalysen für Unternehmen</span>
+                            <span class="lang lang-en">BaFin/MiCA-compliant risk analyses for businesses</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>
+                    <span class="lang lang-de">Unsere Projekte</span>
+                    <span class="lang lang-en">Our Projects</span>
+                </h2>
+                <p class="lead text-secondary">
+                    <span class="lang lang-de">Erfolgreiche Zusammenarbeit mit führenden Behörden</span>
+                    <span class="lang lang-en">Successful collaboration with leading authorities</span>
+                </p>
+                <div class="mt-4">
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="lang lang-de">Alle</span>
+                        <span class="lang lang-en">All</span>
+                    </button>
+                    <button class="filter-btn" data-filter="BKA">BKA</button>
+                    <button class="filter-btn" data-filter="BaFin">BaFin</button>
+                    <button class="filter-btn" data-filter="Europol">Europol</button>
+                    <button class="filter-btn" data-filter="LKA">LKA</button>
+                    <button class="filter-btn" data-filter="ZIT">ZIT</button>
+                </div>
+            </div>
+            <div class="row" id="projectsContainer">
+                <div class="col-lg-6 project-item" data-category="BKA">
+                    <div class="project-card">
+                        <span class="project-badge">BKA</span>
+                        <h4>Operation Chainbreaker</h4>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">1,2 Mio. € Ransomware-Rückeroberung | 3 Festnahmen</span>
+                            <span class="lang lang-en">€1.2M ransomware recovery | 3 arrests</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-category="BaFin">
+                    <div class="project-card">
+                        <span class="project-badge">BaFin</span>
+                        <h4>BaFin Stablecoin</h4>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">47 illegale Tx identifiziert | 500k€ Bußgelder</span>
+                            <span class="lang lang-en">47 illegal tx identified | €500k fines</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-category="Europol">
+                    <div class="project-card">
+                        <span class="project-badge">Europol</span>
+                        <h4>Europol Trace</h4>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">2,5 Mio. € EU-weit | 65% Recovery</span>
+                            <span class="lang lang-en">€2.5M EU-wide | 65% recovery</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-category="ZIT">
+                    <div class="project-card">
+                        <span class="project-badge">ZIT</span>
+                        <h4>ZIT Response</h4>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">750k€ eingefroren | 8 Monate Zeitersparnis</span>
+                            <span class="lang lang-en">€750k frozen | 8 months time saved</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-category="LKA">
+                    <div class="project-card">
+                        <span class="project-badge">LKA Hessen</span>
+                        <h4>LKA Hessen</h4>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">900k€ zurückgeholt | 20 Wallets enttarnt</span>
+                            <span class="lang lang-en">€900k recovered | 20 wallets uncovered</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-category="BaFin">
+                    <div class="project-card">
+                        <span class="project-badge">BaFin</span>
+                        <h4>BaFin AML Training</h4>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">50+ Inspektoren geschult | 30% schnellere Bearbeitung</span>
+                            <span class="lang lang-en">50+ inspectors trained | 30% faster processing</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h2>
+                        <span class="lang lang-de">Über uns</span>
+                        <span class="lang lang-en">About Us</span>
+                    </h2>
+                    <p class="lead">
+                        <span class="lang lang-de">Führende Krypto-Forensik Vereinigung Deutschland/Österreich. ISO 27001, MiCA-konform, BKA-Partner. Team: Ex-BKA, Blockchain-Pioniere, Rechtswissenschaftler. 750+ Fälle erfolgreich gelöst.</span>
+                        <span class="lang lang-en">Leading crypto forensics association Germany/Austria. ISO 27001, MiCA compliant, BKA partner. Team: Ex-BKA, blockchain pioneers, legal experts. 750+ cases successfully solved.</span>
+                    </p>
+                    <div class="mt-4">
+                        <div class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>ISO 27001 
+                                <span class="lang lang-de">zertifiziert</span>
+                                <span class="lang lang-en">certified</span>
+                            </strong>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>MiCA-
+                                <span class="lang lang-de">konform</span>
+                                <span class="lang lang-en">compliant</span>
+                            </strong>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>
+                                <span class="lang lang-de">Offizieller BKA-Partner</span>
+                                <span class="lang lang-en">Official BKA partner</span>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card">
+                        <h4>
+                            <span class="lang lang-de">Unser Team</span>
+                            <span class="lang lang-en">Our Team</span>
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-user-shield me-2" style="color: var(--accent);"></i>
+                                <span class="lang lang-de">Ehemalige BKA-Ermittler</span>
+                                <span class="lang lang-en">Former BKA investigators</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-code me-2" style="color: var(--accent);"></i>
+                                <span class="lang lang-de">Blockchain-Entwickler seit 2013</span>
+                                <span class="lang lang-en">Blockchain developers since 2013</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-gavel me-2" style="color: var(--accent);"></i>
+                                <span class="lang lang-de">Rechtswissenschaftler & Compliance-Experten</span>
+                                <span class="lang lang-en">Legal scholars & compliance experts</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-chart-line me-2" style="color: var(--accent);"></i>
+                                <span class="lang lang-de">Forensische Analysten</span>
+                                <span class="lang lang-en">Forensic analysts</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ceo-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                        <img src="https://thispersondoesnotexist.tools/img/faces/avatar-117c60fad6a3e1c072dd649def0213fd.jpg" alt="Dr. Maximilian Weber" class="ceo-photo">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="ceo-name">Dr. Maximilian Weber</div>
+                        <div class="ceo-title">
+                            <span class="lang lang-de">Vorstand & Gründer</span>
+                            <span class="lang lang-en">CEO & Founder</span>
+                        </div>
+                        <div class="ceo-bio">
+                            <p>
+                                <span class="lang lang-de">
+                                    Dr. Maximilian Weber ist ein renommierter Experte für Krypto-Forensik mit über 15 Jahren Erfahrung in der Cyberkriminalitätsbekämpfung. 
+                                    Vor der Gründung von DKBRV leitete er die Abteilung für digitale Forensik beim BKA, wo er maßgeblich an der Entwicklung modernster 
+                                    Blockchain-Tracking-Technologien beteiligt war. Dr. Weber promovierte an der TU München in Informatik mit Schwerpunkt auf Kryptographie 
+                                    und verteilten Systemen. Unter seiner Führung hat DKBRV über 750 Fälle erfolgreich gelöst und mehr als €5,35 Millionen an gestohlenen 
+                                    Vermögenswerten zurückerobert. Seine Expertise wird regelmäßig von internationalen Strafverfolgungsbehörden und Finanzaufsichtsbehörden 
+                                    in Anspruch genommen.
+                                </span>
+                                <span class="lang lang-en">
+                                    Dr. Maximilian Weber is a renowned crypto forensics expert with over 15 years of experience in combating cybercrime. 
+                                    Before founding DKBRV, he led the digital forensics department at BKA, where he was instrumental in developing cutting-edge 
+                                    blockchain tracking technologies. Dr. Weber earned his PhD from TU Munich in Computer Science, specializing in cryptography 
+                                    and distributed systems. Under his leadership, DKBRV has successfully solved over 750 cases and recovered more than €5.35 million 
+                                    in stolen assets. His expertise is regularly sought by international law enforcement and financial regulatory authorities.
+                                </span>
+                            </p>
+                            <div class="mt-3">
+                                <i class="fas fa-graduation-cap me-2" style="color: var(--accent);"></i>
+                                <strong>PhD Computer Science - TU München</strong>
+                                <br>
+                                <i class="fas fa-briefcase me-2 mt-2" style="color: var(--accent);"></i>
+                                <strong>
+                                    <span class="lang lang-de">15+ Jahre Erfahrung in Cyberkriminalitätsbekämpfung</span>
+                                    <span class="lang lang-en">15+ years experience in cybercrime investigation</span>
+                                </strong>
+                                <br>
+                                <i class="fas fa-award me-2 mt-2" style="color: var(--accent);"></i>
+                                <strong>
+                                    <span class="lang lang-de">Ehemaliger Leiter Digitale Forensik, BKA</span>
+                                    <span class="lang lang-en">Former Head of Digital Forensics, BKA</span>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3>
+                        <span class="lang lang-de">Unser Führungsteam</span>
+                        <span class="lang lang-en">Our Leadership Team</span>
+                    </h3>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="https://thispersondoesnotexist.tools/img/faces/avatar-1195906a734f1f532cb7f0f2e21018a9.jpg" alt="Sarah Müller" class="team-photo">
+                        <h5>Sarah Müller</h5>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">Leiterin Blockchain-Forensik</span>
+                            <span class="lang lang-en">Head of Blockchain Forensics</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="https://thispersondoesnotexist.tools/img/faces/thispersondoesnotexist-44.jpg" alt="Thomas Schmidt" class="team-photo">
+                        <h5>Thomas Schmidt</h5>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">Leiter Compliance & Recht</span>
+                            <span class="lang lang-en">Head of Compliance & Legal</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="https://thispersondoesnotexist.tools/img/faces/avatar-110cb2148bf39309bfe53d6fbda5cc80.jpg" alt="Anna Fischer" class="team-photo">
+                        <h5>Anna Fischer</h5>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">Leiterin Asset Recovery</span>
+                            <span class="lang lang-en">Head of Asset Recovery</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="https://thispersondoesnotexist.tools/img/faces/avatar-11afd958a0fd3c0cc84368a23c2a27aa.jpg" alt="Michael Wagner" class="team-photo">
+                        <h5>Michael Wagner</h5>
+                        <p class="text-secondary">
+                            <span class="lang lang-de">Leiter Technologie</span>
+                            <span class="lang lang-en">Head of Technology</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="success" class="bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>
+                    <span class="lang lang-de">Vertrauen & Partner</span>
+                    <span class="lang lang-en">Trust & Partners</span>
+                </h2>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <h5>BKA</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <h5>BaFin</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <h5>Europol</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <h5>Chainalysis</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <h5>AIT (AT)</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <h5>DLT Austria</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="testimonial">
+                        <p>
+                            <span class="lang lang-de">"DKBRV ist unser verlängerter Arm für Krypto-Ermittlungen."</span>
+                            <span class="lang lang-en">"DKBRV is our extended arm for crypto investigations."</span>
+                        </p>
+                        <footer>— BKA</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mica">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>MiCA Impact 2024</h2>
+                <p class="lead text-secondary">
+                    <span class="lang lang-de">Marktentwicklung und Compliance-Kennzahlen</span>
+                    <span class="lang lang-en">Market development and compliance metrics</span>
+                </p>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="lang lang-de">Metrik</span>
+                                <span class="lang lang-en">Metric</span>
+                            </th>
+                            <th>
+                                <span class="lang lang-de">Wert</span>
+                                <span class="lang lang-en">Value</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="lang lang-de">Marktwachstum</span>
+                                <span class="lang lang-en">Market Growth</span>
+                            </td>
+                            <td>+24%</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="lang lang-de">VASP registriert</span>
+                                <span class="lang lang-en">VASP registered</span>
+                            </td>
+                            <td>47%</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="lang lang-de">Firmen lizenziert</span>
+                                <span class="lang lang-en">Firms licensed</span>
+                            </td>
+                            <td>53</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="lang lang-de">Bußgelder verhängt</span>
+                                <span class="lang lang-en">Fines imposed</span>
+                            </td>
+                            <td>€145 Mio.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>
+                    <span class="lang lang-de">Kontakt</span>
+                    <span class="lang lang-en">Contact</span>
+                </h2>
+                <p class="lead text-secondary">
+                    <span class="lang lang-de">Beginnen Sie Ihre Krypto-Rettung noch heute</span>
+                    <span class="lang lang-en">Start your crypto recovery today</span>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mb-4">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">
+                                    <span class="lang lang-de">Name *</span>
+                                    <span class="lang lang-en">Name *</span>
+                                </label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">
+                                    <span class="lang lang-de">Telefon</span>
+                                    <span class="lang lang-en">Phone</span>
+                                </label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="caseType" class="form-label">
+                                    <span class="lang lang-de">Fall-Typ</span>
+                                    <span class="lang lang-en">Case Type</span>
+                                </label>
+                                <select class="form-select" id="caseType">
+                                    <option value="fraud">
+                                        <span class="lang lang-de">Betrug</span>
+                                        <span class="lang lang-en">Fraud</span>
+                                    </option>
+                                    <option value="ransomware">Ransomware</option>
+                                    <option value="compliance">Compliance</option>
+                                    <option value="other">
+                                        <span class="lang lang-de">Sonstiges</span>
+                                        <span class="lang lang-en">Other</span>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">
+                                    <span class="lang lang-de">Nachricht</span>
+                                    <span class="lang lang-en">Message</span>
+                                </label>
+                                <textarea class="form-control" id="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <span class="lang lang-de">Anfrage senden</span>
+                                <span class="lang lang-en">Send Request</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h4 class="mb-4">
+                            <span class="lang lang-de">Kontaktinformationen</span>
+                            <span class="lang lang-en">Contact Information</span>
+                        </h4>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>24/7 Hotline</strong><br>
+                                +49 69 1234 5678
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                info@dkbrv.de
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>
+                                    <span class="lang lang-de">Adresse</span>
+                                    <span class="lang lang-en">Address</span>
+                                </strong><br>
+                                Mainzer Landstraße 123<br>
+                                60327 Frankfurt am Main
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <i class="fas fa-map-marked-alt fa-3x"></i>
+                        <p class="ms-3">
+                            <span class="lang lang-de">Frankfurt am Main<br>Finanzdistrikt</span>
+                            <span class="lang lang-en">Frankfurt am Main<br>Financial District</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="impressum">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>DKBRV e.V.</h5>
+                    <p class="text-secondary">
+                        <span class="lang lang-de">Deutsche Kryptobetrugsrückgewinnungsvereinigung e.V.</span>
+                        <span class="lang lang-en">German Crypto Fraud Recovery Association</span>
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Impressum</h5>
+                    <p class="text-secondary">
+                        DKBRV e.V.<br>
+                        Mainzer Landstraße 123<br>
+                        60327 Frankfurt am Main<br>
+                        <span class="lang lang-de">Vorstand:</span>
+                        <span class="lang lang-en">Board:</span> Dr. Maximilian Weber<br>
+                        VR 12345 | USt-ID: DE987654321
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>
+                        <span class="lang lang-de">Rechtliches</span>
+                        <span class="lang lang-en">Legal</span>
+                    </h5>
+                    <p class="text-secondary">
+                        <a href="#" class="text-decoration-none" style="color: var(--accent);">
+                            <span class="lang lang-de">Datenschutz</span>
+                            <span class="lang lang-en">Privacy Policy</span>
+                        </a><br>
+                        <a href="#" class="text-decoration-none" style="color: var(--accent);">AGB</a><br>
+                        <a href="#" class="text-decoration-none" style="color: var(--accent);">
+                            <span class="lang lang-de">Cookie-Richtlinie</span>
+                            <span class="lang lang-en">Cookie Policy</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center pt-3 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="text-secondary mb-0">© 2025 DKBRV e.V. 
+                    <span class="lang lang-de">Alle Rechte vorbehalten.</span>
+                    <span class="lang lang-en">All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <p class="mb-md-0">
+                        <span class="lang lang-de">Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie unserer Cookie-Richtlinie zu.</span>
+                        <span class="lang lang-en">We use cookies to improve your experience. By using our website, you agree to our cookie policy.</span>
+                    </p>
+                </div>
+                <div class="col-md-3 text-end">
+                    <button class="btn btn-primary btn-sm" onclick="acceptCookies()">
+                        <span class="lang lang-de">Akzeptieren</span>
+                        <span class="lang lang-en">Accept</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                const loadingScreen = document.querySelector('.loading-screen');
+                if (loadingScreen) {
+                    loadingScreen.style.display = 'none';
+                }
+            }, 3000);
+
+            const counters = document.querySelectorAll('[data-count]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseFloat(counter.getAttribute('data-count'));
+                        const duration = 2000;
+                        const increment = target / (duration / 16);
+                        let current = 0;
+
+                        const updateCounter = () => {
+                            current += increment;
+                            if (current < target) {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.textContent = target % 1 === 0 ? target : target.toFixed(2);
+                            }
+                        };
+
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+
+            counters.forEach(counter => observer.observe(counter));
+
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    projectItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.9)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const caseType = document.getElementById('caseType').value;
+                const message = document.getElementById('message').value;
+
+                alert(document.body.getAttribute('data-lang') === 'de' 
+                    ? 'Vielen Dank für Ihre Anfrage! Wir melden uns in Kürze bei Ihnen.' 
+                    : 'Thank you for your inquiry! We will contact you shortly.');
+                
+                contactForm.reset();
+            });
+
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    document.getElementById('cookieBanner').classList.add('show');
+                }, 1000);
+            }
+
+            const savedLang = localStorage.getItem('language') || 'de';
+            setLanguage(savedLang);
+        });
+
+        function toggleLanguage() {
+            const currentLang = document.body.getAttribute('data-lang');
+            const newLang = currentLang === 'de' ? 'en' : 'de';
+            setLanguage(newLang);
+        }
+
+        function setLanguage(lang) {
+            document.body.setAttribute('data-lang', lang);
+            localStorage.setItem('language', lang);
+            
+            document.querySelectorAll('.lang').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                el.classList.add('active');
+            });
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                    }
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+                navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.5)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
